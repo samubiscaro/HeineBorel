@@ -4,4 +4,4 @@ In this project, we will formalize the Heine Borel theorem for metric spaces. We
 
 == Repository outline
 
-The `Project` folder contains the three files formalizing the proof: ```CompleteSpaces.lean```, ```BoundedSpaces.lean``` and ``HeineBorel.lean``. Note that these three files all depend on basically all of the files in the course repository ``` MAT740-Topology-in-Lean-HS25```.
+The `Project` folder contains the three files formalizing the proof: `CompleteSpaces.lean`, `BoundedSpaces.lean` and `HeineBorel.lean`. Note that these three files all depend on basically all of the files in the course repository `MAT740-Topology-in-Lean-HS25`.
