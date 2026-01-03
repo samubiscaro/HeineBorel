@@ -1,0 +1,87 @@
+{"synthetic": false,
+ "outputs":
+ {"o": ["9882375468408701526"],
+  "i": "15550656406937680949",
+  "c": "10558726261076111014"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/Users/samu/Documents/GitHub/HeineBorel/.lake/packages/Cli/.lake/build/lib/lean:/Users/samu/Documents/GitHub/HeineBorel/.lake/packages/batteries/.lake/build/lib/lean:/Users/samu/Documents/GitHub/HeineBorel/.lake/packages/Qq/.lake/build/lib/lean:/Users/samu/Documents/GitHub/HeineBorel/.lake/packages/aesop/.lake/build/lib/lean:/Users/samu/Documents/GitHub/HeineBorel/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/samu/Documents/GitHub/HeineBorel/.lake/packages/importGraph/.lake/build/lib/lean:/Users/samu/Documents/GitHub/HeineBorel/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/samu/Documents/GitHub/HeineBorel/.lake/packages/plausible/.lake/build/lib/lean:/Users/samu/Documents/GitHub/HeineBorel/.lake/packages/mathlib/.lake/build/lib/lean:/Users/samu/Documents/GitHub/HeineBorel/.lake/build/lib/lean /Users/samu/.elan/toolchains/leanprover--lean4---v4.23.0-rc2/bin/lean /Users/samu/Documents/GitHub/HeineBorel/MAT740TopologyInLeanHS25/Definitions/NewSpaces.lean -o /Users/samu/Documents/GitHub/HeineBorel/.lake/build/lib/lean/MAT740TopologyInLeanHS25/Definitions/NewSpaces.olean -i /Users/samu/Documents/GitHub/HeineBorel/.lake/build/lib/lean/MAT740TopologyInLeanHS25/Definitions/NewSpaces.ilean -c /Users/samu/Documents/GitHub/HeineBorel/.lake/build/ir/MAT740TopologyInLeanHS25/Definitions/NewSpaces.c --setup /Users/samu/Documents/GitHub/HeineBorel/.lake/build/ir/MAT740TopologyInLeanHS25/Definitions/NewSpaces.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "MAT740TopologyInLeanHS25/Definitions/NewSpaces.lean:198:8: declaration uses 'sorry'",
+   "level": "warning"},
+  {"message":
+   "MAT740TopologyInLeanHS25/Definitions/NewSpaces.lean:202:8: declaration uses 'sorry'",
+   "level": "warning"},
+  {"message":
+   "MAT740TopologyInLeanHS25/Definitions/NewSpaces.lean:206:8: declaration uses 'sorry'",
+   "level": "warning"},
+  {"message":
+   "MAT740TopologyInLeanHS25/Definitions/NewSpaces.lean:214:9: declaration uses 'sorry'",
+   "level": "warning"},
+  {"message":
+   "MAT740TopologyInLeanHS25/Definitions/NewSpaces.lean:214:9: declaration uses 'sorry'",
+   "level": "warning"},
+  {"message":
+   "MAT740TopologyInLeanHS25/Definitions/NewSpaces.lean:228:9: declaration uses 'sorry'",
+   "level": "warning"},
+  {"message":
+   "MAT740TopologyInLeanHS25/Definitions/NewSpaces.lean:228:0: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "MAT740TopologyInLeanHS25/Definitions/NewSpaces.lean:233:4: declaration uses 'sorry'",
+   "level": "warning"},
+  {"message":
+   "MAT740TopologyInLeanHS25/Definitions/NewSpaces.lean:233:4: declaration uses 'sorry'",
+   "level": "warning"},
+  {"message":
+   "MAT740TopologyInLeanHS25/Definitions/NewSpaces.lean:269:9: declaration uses 'sorry'",
+   "level": "warning"},
+  {"message":
+   "MAT740TopologyInLeanHS25/Definitions/NewSpaces.lean:269:9: declaration uses 'sorry'",
+   "level": "warning"},
+  {"message":
+   "MAT740TopologyInLeanHS25/Definitions/NewSpaces.lean:269:0: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "MAT740TopologyInLeanHS25/Definitions/NewSpaces.lean:282:9: declaration uses 'sorry'",
+   "level": "warning"},
+  {"message":
+   "MAT740TopologyInLeanHS25/Definitions/NewSpaces.lean:282:0: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "MAT740TopologyInLeanHS25/Definitions/NewSpaces.lean:15:0: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"}],
+ "inputs":
+ [["MAT740TopologyInLeanHS25.Definitions.NewSpaces:deps",
+   [["deps",
+     [["«MAT740-Topology-in-Lean-HS25»/MAT740TopologyInLeanHS25:extraDep",
+       [["@«MAT740-Topology-in-Lean-HS25»:extraDep", "1723"]]],
+      ["imports",
+       [["Mathlib.Tactic transitive imports (legacy)", "15421042236116525901"],
+        ["Mathlib.Tactic:importAllArts", "18049348702817354389"],
+        ["MAT740TopologyInLeanHS25.Definitions.TopologicalSpaces transitive imports (legacy)",
+         "12161413081617670296"],
+        ["MAT740TopologyInLeanHS25.Definitions.TopologicalSpaces:importAllArts",
+         "1473352674128499644"],
+        ["MAT740TopologyInLeanHS25.Definitions.Bases transitive imports (legacy)",
+         "9389749928403158175"],
+        ["MAT740TopologyInLeanHS25.Definitions.Bases:importAllArts",
+         "15359856750787433470"]]]]],
+    ["libs",
+     [["import dynlibs", "1723"],
+      ["package external libraries", "1723"],
+      ["module dynlibs", "1723"],
+      ["module plugins", "1723"]]]]],
+  ["Lean 4.23.0, commit ad1a017949674a947f0d6794cbf7130d642c6530",
+   "2372534101328293747"],
+  ["/Users/samu/Documents/GitHub/HeineBorel/MAT740TopologyInLeanHS25/Definitions/NewSpaces.lean",
+   "14303033547628684682"],
+  ["options",
+   [["-DmaxSynthPendingDepth=3", "14379489197236848084"],
+    ["-Dweak.linter.mathlibStandardSet=true", "9949955268809796418"],
+    ["-DrelaxedAutoImplicit=false", "8404479228809428608"],
+    ["-Dpp.unicode.fun=true", "11210593074386665387"],
+    ["-DautoImplicit=false", "5369888039164004816"]]],
+  ["Module.leanArgs: #[]", "1723"]],
+ "depHash": "18178289529002389057"}
