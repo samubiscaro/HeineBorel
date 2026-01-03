@@ -178,7 +178,6 @@ section separated_sequence
 
 -- We will need some recursion, I was not able to use it, in the end I opted
 --  for adding a structure that makes me build the finite sequences
-
 structure Stage (X : Type u) [MetricSpace X] (n : ℕ) (δ : ℝ) where
   (s : Fin n → X)
   (sep : ∀ i j : Fin n, i ≠ j → dist (s i) (s j) > δ / 2)
@@ -303,9 +302,15 @@ lemma not_totally_bounded_implies_separated {X : Type u} [MetricSpace X] (h : ¬
         simp only [lt_self_iff_false, ↓reduceDIte, gt_iff_lt, ULift.forall, lt_add_iff_pos_right,
           zero_lt_one, ↓reduceIte]
 
-  -- Finally define S: this is a classical construction in set theory
+  -- Finally define S
   let S : ℕ → X := fun n =>
     (hs (n+1)).s ⟨n, Nat.lt_succ_self n⟩
+  -- This is a classical construction in set theory:
+  --  we have the struncated sequences, for every n ∈ ℕ we have (hs n).s : Fin n → X,
+  --  they are inscatolated, meaning that for l < m < n it holds
+  --  (hs n).s l = (hs m).s l (this is the hypothesis exte proved above).
+  -- This garantees that this is a "good definition", in the sense that for any m < n it holds
+  --  S m = (hs n).s m
 
   use (δ / 2), S
 
