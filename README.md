@@ -23,7 +23,7 @@ The project is based on and extends the course repository
 - `Report/`
   - `main.typ`: Typst source of the written report
   - `Heine Borel.pdf`: compiled report (submitted)
-  - `setup/`: Typst style and macro files
+  - `setup/`
   - `work.bib`: bibliography
 
 - `lean-toolchain`
