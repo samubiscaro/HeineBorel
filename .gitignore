@@ -1,3 +1,8 @@
 # Lake / Lean
 .lake/
 lake-packages/
+
+# Typst
+*.aux
+*.log
+.typst/
