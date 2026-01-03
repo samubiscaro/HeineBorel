@@ -4,7 +4,7 @@ This project formalizes the Heine–Borel theorem for metric spaces in Lean 4.
 
 The development is carried out under the constraint that we may freely use Mathlib
 *except* for `Mathlib.Topology`. All topological notions are therefore developed
-from scratch in the setting of metric spaces.
+from scratch.
 
 The project is based on and extends the course repository
 [MAT740 Topology in Lean HS25](https://github.com/MariusFurter/MAT740-Topology-in-Lean-HS25).
