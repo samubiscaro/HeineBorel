@@ -1,7 +1,34 @@
-# Heine Borel theorem in Lean
+# Heine–Borel theorem in Lean
 
-In this project, we will formalize the Heine Borel theorem for metric spaces. We will allow ourselves to use everything in [Mathlib](https://github.com/leanprover-community/mathlib4) apart from `Mathlib.Topology`. We start from the repository of the course [MAT740 TopologyInLean HS25](https://github.com/MariusFurter/MAT740-Topology-in-Lean-HS25).
+This project formalizes the Heine–Borel theorem for metric spaces in Lean 4.
 
-## Repository outline
+The development is carried out under the constraint that we may freely use Mathlib
+*except* for `Mathlib.Topology`. All topological notions are therefore developed
+from scratch in the setting of metric spaces.
 
-The `Project` folder contains the three files formalizing the proof: `CompleteSpaces.lean`, `BoundedSpaces.lean` and `HeineBorel.lean`. Note that these three files all depend on basically all of the files in the course repository `MAT740-Topology-in-Lean-HS25`.
+The project is based on and extends the course repository
+[MAT740 Topology in Lean HS25](https://github.com/MariusFurter/MAT740-Topology-in-Lean-HS25).
+
+---
+
+## Repository structure
+
+- `MAT740TopologyInLeanHS25/`
+  - `Definitions/`: core definitions and basic theory developed during the course
+  - `Project/`: files specific to this project
+    - `CompleteSpaces.lean`: completeness results for metric spaces
+    - `BoundedSpaces.lean`: total boundedness results for metric spaces
+    - `HeineBorel.lean`: formalization of the Heine–Borel theorem
+
+- `Report/`
+  - `main.typ`: Typst source of the written report
+  - `Heine Borel.pdf`: compiled report (submitted)
+  - `setup/`: Typst style and macro files
+  - `work.bib`: bibliography
+
+- `lean-toolchain`
+- `lakefile.toml`, `lake-manifest.json`
+- `README.md`
+
+The main entry point of the formalization is
+`MAT740TopologyInLeanHS25/Project/HeineBorel.lean`.
