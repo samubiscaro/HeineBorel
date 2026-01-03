@@ -135,6 +135,10 @@ lemma ultraFilter_extension {X : Type u} [MetricSpace X] (F : MyFilter.Filter X)
   -- Now just apply Zorn, very bad notation here but we get all we need in one line
   obtain ⟨USets, hU_mem, ⟨⟨U, hUP, hFU, hU⟩, Umax⟩⟩ :=
     zorn_subset_nonempty S chain F.Sets hne
+  -- This lemma was different than I expected: it needs a set S of subsets with the chain
+  --  property, and then, given an element F ∈ S, gives an U ∈ S maximal extending F.
+  -- Maybe we could have done this differently, defining S as the whole space of ultrafilters
+  --  now it is too much work to change all the code, but would have been probably easier.
 
   use U
 
