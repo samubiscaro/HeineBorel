@@ -101,7 +101,7 @@ constructor
             apply add_lt_add hx hy
           _ = ε := by ring
 
--- If F is a Cauchy filter adherent to G, then F converges to the same limit as G
+-- If F is a Cauchy filter adherent to G, then F converges (to the same limit as G)
 lemma CauchyFilter_converge_to_adeherent {X : Type u}
     [MetricSpace X] (F : MyFilter.Filter X) (G : MyFilter.Filter X) :
     CauchyFilt F → adherent F G → Convergent G → Convergent F := by

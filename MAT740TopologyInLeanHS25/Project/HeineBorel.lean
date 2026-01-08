@@ -27,15 +27,7 @@ theorem Compact_iff_Complete_and_totallyBounded {X : Type u} [MetricSpace X] :
       -- ... U converges because X is compact ...
       specialize h U hU
       -- ... and so does F because F ⊆ U and F is Cauchy
-      exact CauchyFilter_converge_to_adeherent F U hC
-        (by
-          intro A B l hl hA hB
-          have w : A ∩ B ∈ U := by exact U.inter_Sets (hFU hA) (hl hB)
-          intro h
-          rw [h] at w
-          obtain ⟨hU, _ ⟩ := hU
-          contradiction
-        ) h
+      exact CauchyFilter_converge_to_adeherent F U hC (adherent_if_contained F U hFU hU.1) h
     · -- Compact → totallyBounded
       -- Take an ultrafilter U ...
       intro F hF

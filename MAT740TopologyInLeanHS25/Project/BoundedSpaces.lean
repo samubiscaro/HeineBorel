@@ -174,7 +174,7 @@ section separated_sequence
 
 -- This is the most difficult part of this section
 -- We need to show that if a space is not totally bounded then there is
---  some ε and a sequence x that is ε separated
+--  some ε and an infinite sequence x that is ε separated
 
 -- We will need some recursion, I was not able to use it, in the end I opted
 --  for adding a structure that makes me build the finite sequences
@@ -386,13 +386,16 @@ lemma totallyBounded_iff_filterTotallyBounded {X : Type u} [MetricSpace X] :
     -- ... take its eventuality filter F ...
     let F := MyFilter.eventuality s
     -- ... extend it to an ultrafilter U ...
-    obtain ⟨U, hU, hFU⟩ := ultraFilter_extension F (by exact eventuality_is_proper s)
+    obtain ⟨U, hU, hFU⟩ := ultraFilter_extension F (eventuality_is_proper s)
     specialize hX U hU
     obtain ⟨hUP, hUC⟩ := hX
-    -- ... each A ∈ U containsinfinitely many elements of s, but they are ε-separated
+    -- ... each A ∈ U contains infinitely many elements of s, but they are ε-separated
     --  so U is an ultrafilter but not a Cauchy filter
     specialize hUC ε hε
     obtain ⟨A, hAU, hA⟩ := hUC
+    -- as above, there are indeed infinitely many elements of s in A (otherwise Aᶜ ∈ F)
+    -- I was not able to prove this, so I proved the weaker fact that
+    --  there are at least two elements of s.
     have w : ∃ i j : ℕ, i ≠ j ∧ s i ∈ A ∧ s j ∈ A := by
       by_contra h
       push_neg at h
